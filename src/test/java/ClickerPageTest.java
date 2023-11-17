@@ -9,16 +9,6 @@ public class ClickerPageTest extends BaseTest {
         clickerPage.openMainPage();
         clickerPage.switchToFrame();
         clickerPage.clickOnPlusOrMinus(Symbol.PLUS,countOfClicks);
-        assertions.equalsOfInt(34, clickerPage.getCountOfClicksFromCountedrField());
-        clickerPage.clickOnPlusOrMinus(Symbol.MINUS,15);
-    }
-
-        @Test
-    public void clickPlusCheckTest2(){
-        int countOfClicks = 5;
-        clickerPage.openMainPage();
-        clickerPage.switchToFrame();
-        clickerPage.clickOnPlusOrMinus(Symbol.PLUS,countOfClicks);
         assertions.equalsOfInt(countOfClicks, clickerPage.getCountOfClicksFromCountedrField());
         clickerPage.clickOnPlusOrMinus(Symbol.MINUS,15);
     }

@@ -4,6 +4,7 @@ import functions.Action;
 import functions.Assertions;
 import functions.Elements;
 import functions.Waiters;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,7 +22,7 @@ public class DriverFactory {
     private static final long IMPLICITY_WAIT = 20L;
 
     private static WebDriver setUpDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\selen\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         driver = new ChromeDriver(options);
