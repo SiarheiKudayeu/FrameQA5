@@ -14,7 +14,7 @@
         <maven.surefire.version>3.0.0-M8</maven.surefire.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <aspectj.version>1.9.6</aspectj.version>
-        <testng.version>7.0.0</testng.version>
+        <testng.version>7.8.0</testng.version>
         <allure.testng>2.13.5</allure.testng>
         <allure-maven>2.9</allure-maven>
         <allure-maven.version>2.10.0</allure-maven.version>
@@ -22,7 +22,7 @@
         <selenium-remote-driver>3.141.59</selenium-remote-driver>
         <testrail-api-client>2.0.1</testrail-api-client>
         <slf4j.version>2.0.7</slf4j.version>
-        <selenium-java.version>3.141.59</selenium-java.version>
+        <selenium-java.version>4.15.0</selenium-java.version>
         <webdrivermanager.version>5.6.2</webdrivermanager.version>
     </properties>
 
@@ -40,28 +40,17 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
+            <version>7.8.0</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>${allure.testng}</version>
+            <version>2.13.5</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-maven</artifactId>
-            <version>${allure-maven}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>${selenium-remote-driver}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.codepine.api</groupId>
-            <artifactId>testrail-api-java-client</artifactId>
-            <version>${testrail-api-client}</version>
+            <version>2.9</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>

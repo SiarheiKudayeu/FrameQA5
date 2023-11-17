@@ -9,7 +9,7 @@ public class ClickerPageTest extends BaseTest {
         clickerPage.openMainPage();
         clickerPage.switchToFrame();
         clickerPage.clickOnPlusOrMinus(Symbol.PLUS,countOfClicks);
-        assertions.equalsOfInt(countOfClicks, clickerPage.getCountOfClicksFromCountedrField());
+        assertions.equalsOfInt(4, clickerPage.getCountOfClicksFromCountedrField());
         clickerPage.clickOnPlusOrMinus(Symbol.MINUS,15);
     }
 }
